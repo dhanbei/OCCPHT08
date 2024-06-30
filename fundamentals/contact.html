@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me?</title>
+</head>
+<body><center>
+  <br>
+  <h1 id="top">Do you have any questions? I hope not... Just kidding, just fill out the form below :)</h1>
+  <hr>
+    <form action="">
+        <h2>Of course I need to ask a bit about yourself</h2>
+        <br>
+        <br>
+        <br>
+        <!-- Usage of form elements: label, input, textarea, select, button -->
+         <label for="firstName">*Of course your First Name:</label>
+         <input type="text" name="firstName" id="firstName" required />
+         <br>
+         <br>
+         <label for="lastName" >This is not required but add also your Last Name:</label>
+         <input type="text" name="lastName" id="lastName" />
+
+        <br>
+        <br>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="noGender">No Gender</option>
+        </select>
+          
+          <!-- Radio Buttons and checkboxes provide options for users to make selections -->
+        <h4>Question about?</h4>
+        <input type="radio" id="personal" name="fish" value="Salmon">
+        <label for="salmon">Personal</label>
+        <input type="radio" id="hobbies" name="fish" value="Tilapia">
+        <label for="tilapia">Hobbies</label>
+        <input type="radio" id="interests" name="fish" value="Tuna">
+        <label for="tuna">Interests</label>
+        <input type="radio" id="others" name="fish" value="Tinapa">
+        <label for="tinapa">Others</label>
+
+        <br>
+        <br>
+        <label for="address">Finally! What is your question?:</label>
+        <textarea name="question" id="question" rows="1" cols="50"></textarea>
+        <br>
+        <input type="button" value="Send question">
+    </form>
+  </center>
+    <ul>
+      <li><a href="#top">Go to top</a></li>
+      <li><a href="https://www.google.com" target="_blank">Google.com</a></li>
+      <li><a href="/Fundamentals/index.html">Go To Main Page</a></li>
+  </ul>
+</body>
+</html>

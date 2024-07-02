@@ -147,3 +147,45 @@ function myFunction(num1, num2, num3, num4) {
     console.log(num1 + num2 + num3);
 }
 myFunction(25, 15, 40);
+
+//Control Structures and Loops
+// if statement
+let power = 24;
+if(power >= 18) {
+    console.log("You are powerful!");
+} else {
+    console.log("You are weak!");
+}
+// if - else if - else statement
+let temperature = 19;
+if(temperature < 0){
+    console.log("It's below feezing point!");
+} else if(temperature >= 0 && temperature < 20){
+    console.log("It's cool outside...");
+} else if(temperature >= 20 && temperature < 40){
+    console.log("It's a warm weather");
+} else {
+    console.log("It's Super Hot!");
+}
+
+//Switch Statement
+let day = "Friday";
+switch (day) {
+    case 'Monday':
+        console.log("It's the start of the week.");
+        break;
+    case 'Tuesday':
+        console.log("It's the second day of the week.");
+        break;
+    case 'Wednesday':
+        console.log("It's the third of the week.");
+        break;
+    case 'Thursday':
+        console.log("It's the fourth day of the week.");
+        break;
+    case 'Friday':
+        console.log("Yipee! It's friday!");
+        break;
+    default:
+        console.log("There is no value");
+}

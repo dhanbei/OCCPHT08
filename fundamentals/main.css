@@ -1,0 +1,31 @@
+/* 
+#853780 - KINGFISHER DAISY
+#9C3587 - MEDIUM RED VIOLET
+#E53F71 - CERISE
+#f89f5b - SANDY BROWN
+#3F1651 - PAUA
+*/
+
+
+#welcome{
+    background-color: #bdf8fb;
+    color: #3F1651;
+}
+
+h2{
+    color: #E53F71;
+}
+
+li{
+    font-size:  20px;
+    color:#f89f5b;
+}
+
+ul{
+    font-size:  17px;
+    color: #853780;
+}
+
+hr{
+    background-color: #f89f5b;
+}

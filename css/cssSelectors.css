@@ -1,0 +1,48 @@
+span {
+    color: blue;
+}
+
+.class-name{
+    color: rgb(1, 73, 1);
+}
+
+#id-name{
+    color: rgb(196, 108, 0);
+}
+
+*{
+    color: rgb(213, 56, 56);
+    font-size: 22px;
+}
+
+a[href]{
+    color: red;
+}
+
+a[href="www.sample.com"]{
+    color: rgb(0, 255, 123);
+}
+
+h1, .parag, h2 {
+    color: rgb(219, 9, 173);
+}
+
+.ancestor h3,p {
+    color: rgb(43, 0, 255);
+}
+div > p {
+    font-size: 30px;
+}
+
+button:hover {
+    color: rgb(20, 220, 40);
+    cursor: cell;
+}
+
+h3[id="pseudo-element"]{
+    color: orange; 
+}
+
+a:visited{
+    color: rgb(56, 112, 112);
+}

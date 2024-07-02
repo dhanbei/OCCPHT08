@@ -72,7 +72,7 @@ console.log("The quotient of", qouA, "and", qouB, "is equal to", qou);
     - Undefined - walang equals/no value
     - Null - intentional abnsence of any object value
     - Symbol - unique identifier that is often used as a property key in objects
-*/  
+
 
 let dataNum = 25;
 let dataStr= "Hi";
@@ -81,13 +81,15 @@ let dataUndef;
 let car = null;
 let sym = null; //for further discussion down the line
 
-
 console.log("Data type of", dataNum, "as:", typeof(dataNum));
 console.log("Data type of '"+ dataStr + "' as:", typeof(dataStr));
 console.log("Data type of '"+ dataBool + "' as:", typeof(dataBool));
 console.log("Data type of '"+ dataUndef + "' as:", typeof(dataUndef));
 console.log("Data type of '"+ car + "' as:", typeof(car));
 console.log("Data type of '"+ sym + "' as:", typeof(sym));
+*/  
+
+
 
 //Javascript Operators
 
@@ -148,7 +150,11 @@ function myFunction(num1, num2, num3, num4) {
 }
 myFunction(25, 15, 40);
 
+
+
 //Control Structures and Loops
+
+
 // if statement
 let power = 24;
 if(power >= 18) {
@@ -167,6 +173,8 @@ if(temperature < 0){
 } else {
     console.log("It's Super Hot!");
 }
+
+
 
 //Switch Statement
 let day = "Friday";
@@ -189,3 +197,89 @@ switch (day) {
     default:
         console.log("There is no value");
 }
+
+
+
+// Loops: for loop
+for(let index = 0; index < 4; index ++){ // 0, 1, 2, 3, 4, 5, 6
+    console.log("Count:", index);
+}
+// Loops: while loop
+let count = 1;
+while(count <= 5){
+    console.log("Count:", count);
+    count++;
+}
+// Loop: do-while loops
+let i = 1;
+do {
+    console.log("Do-While Count:", i);
+    i++;
+} while (i <= 5)
+
+
+
+//Arrays
+let fruits = ['apple', 'bayabas', 'pineapple', 'mango', 'pomelo', 'grapes'];
+console.log("First fruit:", fruits[0]);
+console.log("Second fruit:", fruits[1]);
+console.log("Last fruit:", fruits[fruits.length - 1]);
+console.log("Original Array:", fruits);
+//Modifying array elements
+fruits[1] = 'Star Apple';
+fruits.pop();
+fruits.push('Strawberry');
+console.log("First fruit:", fruits[0]);
+console.log("Second fruit:", fruits[1]);
+console.log("Last fruit:", fruits[fruits.length - 1]);
+console.log("Modified Array:", fruits);
+for(let i = 0; i < fruits.length; i++){
+    console.log("Fruit " + i + ":", fruits[i]);
+}
+let colors = ['purple', 'cyan', 'yellow', 'magenda', 'blue', 'fuschia'];
+colors.forEach(function(color){
+    console.log(color);
+})
+
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+//Arrays Methods
+console.log("Array Length:", numbers.length);
+console.log("Index of 8:", numbers.indexOf(8));
+console.log("Includes 9:", numbers.includes(9));
+console.log("Includes 5:", numbers.includes(5));
+console.log("Joined Array:", numbers.join(" "));
+console.log("Sliced Array:", numbers.slice(5,7));
+let removedElements = numbers.splice(1, 4);
+console.log("Removed elements:", removedElements);
+console.log("Updated Array:", numbers);
+
+
+
+//Object Literals
+const person = {
+    firstName: 'Tristan',
+    lastName: 'Pogi',
+    age: 21,
+    hobbies: ['reading', 'playing', 'jumping'],
+    greet: function() {
+        console.log(`Hello, my name is ${this.firstName} ${this.lastName}. Nice to meet you!`);
+    },
+};
+console.log(person.firstName);
+console.log(person.age);
+person.greet();
+person.nationality = "Filipino";
+console.log(person.nationality);
+person.introduce = function () {
+    console.log(`My hobbies are ${this.hobbies.join(", ")}.`)
+}
+person.introduce();
+const address = {
+    street: "123 Street",
+    city: "456 city",
+    country: "Philippines"
+};
+person.address = address;
+console.log(person.address.country);
+console.log(person);

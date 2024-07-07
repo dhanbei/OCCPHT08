@@ -6,14 +6,63 @@
 #3F1651 - PAUA
 */
 
+*{
+    background-color: #0f000e;
+}
+
+#header-nav{
+    background-color: #bdf8fb;
+    color: #9C3587;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 #welcome{
+    background-color: #000000;
+    color: #9C3587;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#profilepic{
+    border-radius: 150px;
+    width: 300px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+    padding: 10px;
+    justify-content: center;
+}
+
+  
+.box > div {
+    color: #f89f5b;
+    padding: 150px 0;
+    font-size: 15px;
+  }
+
+#box1{
+    width: 400px;
+}
+
+#footer-nav{
     background-color: #bdf8fb;
-    color: #3F1651;
+    color: #9C3587;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 h2{
-    color: #E53F71;
+    color: #3F1651;
 }
 
 li{
@@ -28,4 +77,7 @@ ul{
 
 hr{
     background-color: #f89f5b;
+    height: 2px;
+    border: none;
+    width: 100%;
 }

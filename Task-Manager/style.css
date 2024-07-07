@@ -1,0 +1,158 @@
+/* Resets the styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*https://cssgradient.io/ */
+
+/* Setting up styles for the entire body of the webpage */
+body {
+    background-image: linear-gradient(120deg, #ff97a5, #ff6a6f);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+/* Styling the header element */
+header {
+    font-size: 1.5rem;
+}
+/* Styling the header and form elements */
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the input and button elements inside the form */
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+/* Styling the button element inside the form */
+form button {
+    color: #f63c42;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover {
+    background-color: #f63ced;
+    color: rgb(0, 0, 0);
+}
+
+/* Styling the container of our to-do list */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling the list of to-do items */
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+
+/* Styling for each individual to-do item */
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+/* Styling the dropdown filter */
+.filter-todo {
+    padding: 1rem;
+}
+/* Styling the list items within the todo list */
+.todo li {
+    flex: 1;
+}
+
+/* Styling the trash and complete buttons */
+.trash-btn, .complete-btn {
+    background: #f63c42;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn {
+    background-color: #70d36f;
+}
+
+/* Styling for the to-do item */
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+/* Styling for the trash and check icons */
+.fa-trash , .fa-check {
+    pointer-events: none;
+}
+/* Styling for the completed items */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+/* Styling for removing completed items */
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+/* Styling the custom dropdown */
+/* Custom Selector */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+}
+
+/* Styling the custom select dropdown container */
+/* Custom select */
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Styling for the custom select dropdown */
+select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+}
+
+/* Styling for the custom select dropdown arrow */
+.select::after {
+    content:"\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+}
+

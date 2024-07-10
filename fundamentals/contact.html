@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me?</title>
+    <title>My Contacts</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
-<body><center>
+<body>
+
+  <div id="header-nav">
+    <nav = head-nav>
+        <a href="/Fundamentals/index.html">Home</a>
+        <a href="/Fundamentals/projects.html">Projects</a>
+        <a href="#">Trainings and Certificates</a>
+        <a href="/Fundamentals/contact.html">Contacts</a>
+      </nav>
+</div>
+<br>
+<h1 id="top">Do you have any questions? I hope not... Just kidding, just fill out the form below!</h1>
+<div class="contact-box">
+  <div id="contact-grid1">
+    <label for="firstName">*First Name:</label>
+    <input type="text" name="firstName" id="firstName" required />
+  </div>
+  <div id="contact-grid1">
+    <label for="lastName">*Last Name:</label>
+    <input type="text" name="lastName" id="lastName" />
+  </div>
+  <div id="contact-grid1">
+    <label for="gender">Gender:</label>
+    <select name="gender" id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="noGender">No Gender</option>
+    </select>
+  </div>
+  <div id="contact-grid1">
+    <label for="firstName">*Of course your First Name:</label>
+    <input type="text" name="firstName" id="firstName" required />
+  </div>
+
+  
+
+</div>
+
+  <!--
+  <center>
   <br>
   <h1 id="top">Do you have any questions? I hope not... Just kidding, just fill out the form below :)</h1>
   <hr>
@@ -14,7 +54,7 @@
         <br>
         <br>
         <br>
-        <!-- Usage of form elements: label, input, textarea, select, button -->
+        <!-- Usage of form elements: label, input, textarea, select, button 
          <label for="firstName">*Of course your First Name:</label>
          <input type="text" name="firstName" id="firstName" required />
          <br>
@@ -31,7 +71,7 @@
           <option value="noGender">No Gender</option>
         </select>
           
-          <!-- Radio Buttons and checkboxes provide options for users to make selections -->
+          <!-- Radio Buttons and checkboxes provide options for users to make selections 
         <h4>Question about?</h4>
         <input type="radio" id="personal" name="fish" value="Salmon">
         <label for="salmon">Personal</label>
@@ -50,10 +90,16 @@
         <input type="button" value="Send question">
     </form>
   </center>
-    <ul>
-      <li><a href="#top">Go to top</a></li>
-      <li><a href="https://www.google.com" target="_blank">Google.com</a></li>
-      <li><a href="/Fundamentals/index.html">Go To Main Page</a></li>
-  </ul>
+    -->
+  <hr>
+
+  <div id="footer-nav">
+    <nav>
+      <a href="/Fundamentals/index.html">Home</a>
+      <a href="/Fundamentals/projects.html">Projects</a>
+      <a href="#">Trainings and Certificates</a>
+      <a href="/Fundamentals/contact.html">Contacts</a>
+    </nav>
+</div>
 </body>
 </html>

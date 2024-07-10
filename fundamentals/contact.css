@@ -1,10 +1,3 @@
-/* 
-#853780 - KINGFISHER DAISY
-#9C3587 - MEDIUM RED VIOLET
-#E53F71 - CERISE
-#f89f5b - SANDY BROWN
-#3F1651 - PAUA
-*/
 
 body{
     background-color:#FFE0B5;
@@ -28,40 +21,8 @@ body{
     font-weight: bold;
 }
 
-#welcome{
-    background-color: #000000;
-    color: #9C3587;
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-#profilepic{
-    border-radius: 150px;
-    width: 300px;
-}
-
-.main-box{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    gap: 10px;
-
-}
-
-  
-.main-box > div {
-    color: #f89f5b;
-    padding: 150px 0;
-    font-size: 15px;
-  }
-
-#main-box1{
-    width: 400px;
-}
-
 #footer-nav{
+    background-color: #bdf8fb;
     color: #9C3587;
     width: 100%;
     height: auto;
@@ -70,19 +31,28 @@ body{
     margin-top: 20px;
 }
 
-h2{
-    color: #3F1651;
+
+.contact-box{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+  
+.contact-box > div {
+    color: #E87461;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+#top{
+    text-align: center;
 }
 
-li{
-    font-size:  20px;
-    color:#f89f5b;
+
+.contact-grid1 > div{
+    width: 100%;
 }
 
-ul{
-    font-size:  17px;
-    color: #853780;
-}
 
 hr{
     background-color: #f89f5b;
@@ -99,7 +69,6 @@ a {
 } 
 
 a:hover{
-    background-color: #FFE0B5;
-    border-color: #f89f5b;
-    border-radius: 10px 10px 0 0;
+    background-color: #FAA6FF;
+    border-radius: 10px;
 }

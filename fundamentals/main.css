@@ -22,12 +22,11 @@ body{
     align-content: end;
 }
 
-#head-nav{
+#head-nav, #foot-nav{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
-
 #welcome{
     background-color: #000000;
     color: #9C3587;
@@ -62,12 +61,13 @@ body{
 }
 
 #footer-nav{
-    color: #9C3587;
+    background-color: #3F1651;
     width: 100%;
-    height: auto;
+    height: 50px;
+    padding-bottom: 5px;
     box-sizing: border-box;
     text-align: center;
-    margin-top: 20px;
+    align-content: center;
 }
 
 h2{
@@ -100,6 +100,5 @@ a {
 
 a:hover{
     background-color: #FFE0B5;
-    border-color: #f89f5b;
     border-radius: 10px 10px 0 0;
 }
